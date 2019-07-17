@@ -157,10 +157,8 @@ hr.spacer {
   padding: 25px 0 25px 0;
   color: #ffffff;
   background-color: rgba(0,0,0,0.4);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
+  height: 100%;
 }
 
 .hero{
@@ -276,12 +274,34 @@ hr.spacer {
   max-height: 70px;
 }
 
-.icona-evita {
+.icona-evita-divieto {
   position: absolute;
+  right: 25%;
+  top: 75%;
+}
+
+.icona-evita-esclamativo {
+  position: absolute;
+  right: 25%;
+  top: 75%;
+  transform: rotate(5deg)
+}
+
+.backgroundbplvideo {
+  position: relative;
+  background-size: cover;
+  background-position: top center;
+  height: 500px;
 }
 
 @media screen and (max-width: 767px) {
-  .icona-evita {
+  .icona-evita-divieto {
+    display: none;
+  }
+  .icona-evita-esclamativo {
+    display: none;
+  }
+  .icona-genitore {
     display: none;
   }
 }
